@@ -6,8 +6,8 @@ using UnityEngine;
 public class Player_move : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-    Vector3 movementVector;
-    [SerializeField]float speed = 3f;
+    private Vector3 movementVector;
+    public float speed = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,6 @@ public class Player_move : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-
     {
         
         movementVector.x = Input.GetAxisRaw("Horizontal");
