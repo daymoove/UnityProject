@@ -25,6 +25,6 @@ public class Spawner : MonoBehaviour
     {
         randspawn = Random.Range(0, spawnpoint.Length);
         var newenemy = GameObject.Instantiate(enemy,spawnpoint[randspawn].position,transform.rotation);
-        newenemy.GetComponent<EnemyMove>().speed = 1f;
+        newenemy.GetComponent<Enemy>().speed = 1f;
     }
 }
