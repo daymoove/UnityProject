@@ -15,12 +15,6 @@ public class Spawner : MonoBehaviour
         InvokeRepeating("SpawnEnemy", spawnTime, spawnTime);
     }
 
-
-    void Update()
-    {
-        
-    }
-
     void SpawnEnemy()
     {
         randspawn = Random.Range(0, spawnpoint.Length);

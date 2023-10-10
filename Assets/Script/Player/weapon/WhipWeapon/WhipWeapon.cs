@@ -6,7 +6,7 @@ public class WhipWeapon : MonoBehaviour
 {
     public GameObject whipleft;
     public GameObject rightwhip;
-    private float timetoattack = 4f;
+    private float timetoattack = 2f;
     private float timer;
     public GameObject player;
     Player_move playermove;
