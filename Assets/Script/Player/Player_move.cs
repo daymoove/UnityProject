@@ -6,9 +6,13 @@ using UnityEngine;
 public class Player_move : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-    private Vector3 movementVector;
+    public Vector3 movementVector;
     public float speed = 3f;
-    // Start is called before the first frame update
+    [HideInInspector]
+    public float lastverticalvector;
+    [HideInInspector]
+    public float lasthorizontalvector;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -16,12 +20,21 @@ public class Player_move : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
         movementVector.x = Input.GetAxisRaw("Horizontal");
         movementVector.y = Input.GetAxisRaw("Vertical");
+
+        if (movementVector.x != 0)
+        {
+            lasthorizontalvector = movementVector.x;
+        }
+        if (movementVector.y != 0)
+        {
+            lastverticalvector = movementVector.y;
+        }
 
         movementVector *= speed;
 

@@ -209,6 +209,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2800988241803471526, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
   m_PrefabInstance: {fileID: 2800988241868623750}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &476281517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2216116102977602903, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+  m_PrefabInstance: {fileID: 2800988241868623750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +488,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1781636471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2083646030387225154, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+  m_PrefabInstance: {fileID: 2800988241868623750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &429374511310178953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -550,6 +560,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2216116102977602903, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2800988241803471514, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -597,6 +611,22 @@ PrefabInstance:
     - target: {fileID: 2800988241803471526, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532774121414700665, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 203285788}
+    - target: {fileID: 4532774121414700665, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: whipleft
+      value: 
+      objectReference: {fileID: 476281517}
+    - target: {fileID: 4532774121414700665, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: rightwhip
+      value: 
+      objectReference: {fileID: 1781636471}
+    - target: {fileID: 6649323096860827331, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
