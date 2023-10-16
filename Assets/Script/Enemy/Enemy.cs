@@ -12,13 +12,6 @@ public class Enemy : MonoBehaviour
     int damage = 1;
     Player targetplayer;
     
-
-    void Start()
-    {
-        
-    }
-
-    
     void Update()
     {
         targetPosition = player.transform.position;

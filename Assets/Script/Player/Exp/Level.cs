@@ -7,6 +7,7 @@ public class Level : MonoBehaviour
     int level = 1;
     int experience = 0;
     public ExpBar expbar;
+    public GameObject levellayout;
 
     int TO_LEVEL_UP
     {
@@ -36,6 +37,8 @@ public class Level : MonoBehaviour
             experience -= TO_LEVEL_UP;
             level += 1;
             expbar.SetLevelText(level);
+            levellayout.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
