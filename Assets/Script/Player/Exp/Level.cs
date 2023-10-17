@@ -11,7 +11,7 @@ public class Level : MonoBehaviour
     public GameObject levellayout;
     public GameObject buttonupgrade1;
     public GameObject buttonupgrade2;
-    [HideInInspector]public List<string> buttonName = new List<string>() {"WhipDamage","WhipSpeed","HealthRegen", "AddKnife", "AddGarlick"};
+    [HideInInspector] public List<string> buttonName;
     int TO_LEVEL_UP
     {
         get
@@ -22,6 +22,7 @@ public class Level : MonoBehaviour
 
     private void Start()
     {
+        buttonName = new List<string>() { "WhipDamage", "WhipSpeed", "HealthRegen", "AddKnife", "AddGarlick" };
         expbar.UpdateExperienceSlider(experience, TO_LEVEL_UP);
         expbar.SetLevelText(level);
 

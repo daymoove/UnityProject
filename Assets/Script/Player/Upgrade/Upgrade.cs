@@ -9,6 +9,7 @@ public class Upgrade : MonoBehaviour
     public GameObject whip;
     public GameObject knife;
     public GameObject garlick;
+    public HPBar hpbar;
 
     public GameObject buttonupgrade1;
     public GameObject buttonupgrade2;
@@ -133,7 +134,7 @@ public class Upgrade : MonoBehaviour
     public void KnifeNumber()
     {
         knife.GetComponent<KnifeWeapon>().knifenumber++;
-        if (knife.GetComponent<KnifeWeapon>().knifenumber++ == 3)
+        if (knife.GetComponent<KnifeWeapon>().knifenumber == 3)
         {
             Levelplayer.buttonName.Remove("KnifeNumber");
         }
@@ -147,12 +148,17 @@ public class Upgrade : MonoBehaviour
         if (playerhp.currentHp + 100 > playerhp.maxHp)
         {
             playerhp.currentHp += (playerhp.maxHp - playerhp.currentHp);
+            hpbar.UpdateHPSlider(playerhp.currentHp, playerhp.maxHp);
         } else if (playerhp.currentHp >= playerhp.maxHp)
         {
             playerhp.currentHp += 0;
+            hpbar.UpdateHPSlider(playerhp.currentHp, playerhp.maxHp);
         } else
         {
             playerhp.currentHp += 100;
+            hpbar.UpdateHPSlider(playerhp.currentHp, playerhp.maxHp);
         }
+        gameObject.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
