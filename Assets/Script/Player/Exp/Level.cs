@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Level : MonoBehaviour
@@ -8,7 +9,9 @@ public class Level : MonoBehaviour
     int experience = 0;
     public ExpBar expbar;
     public GameObject levellayout;
-
+    public GameObject buttonupgrade1;
+    public GameObject buttonupgrade2;
+    [HideInInspector]public List<string> buttonName = new List<string>() {"WhipDamage","WhipSpeed","HealthRegen", "AddKnife", "AddGarlick"};
     int TO_LEVEL_UP
     {
         get
@@ -21,6 +24,7 @@ public class Level : MonoBehaviour
     {
         expbar.UpdateExperienceSlider(experience, TO_LEVEL_UP);
         expbar.SetLevelText(level);
+
     }
 
     public void AddExp(int amount)
@@ -38,6 +42,18 @@ public class Level : MonoBehaviour
             level += 1;
             expbar.SetLevelText(level);
             levellayout.SetActive(true);
+            int text1num = RandomButton(buttonName.Count-1);
+            int text2num = RandomButton(buttonName.Count-1);
+            
+            if (text2num == text1num && text1num!=buttonName.Count-1)
+            {
+                text2num++;
+            } else if (text2num == text1num && text1num == buttonName.Count - 1)
+            {
+                text2num--;
+            }
+            buttonupgrade1.GetComponentInChildren<TMP_Text>().text = buttonName[text1num];
+            buttonupgrade2.GetComponentInChildren<TMP_Text>().text = buttonName[text2num];
             Time.timeScale = 0f;
         }
     }
@@ -48,5 +64,12 @@ public class Level : MonoBehaviour
         {
             AddExp(400);
         }
+    }
+
+    public int RandomButton(int maxbutton)
+    {
+        int num = Random.Range(0, maxbutton);
+
+        return num;
     }
 }

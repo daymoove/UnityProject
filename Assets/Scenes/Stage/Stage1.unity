@@ -521,9 +521,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1849411660223215648, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
   m_PrefabInstance: {fileID: 2800988241868623750}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &785884973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 698465344398036169, guid: 72d0150104d0ff44594e210e21308911, type: 3}
+  m_PrefabInstance: {fileID: 9058035415096165909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &987075947 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6836921426976283382, guid: 72d0150104d0ff44594e210e21308911, type: 3}
+  m_PrefabInstance: {fileID: 9058035415096165909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &989277380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 228204011867012103, guid: 72d0150104d0ff44594e210e21308911, type: 3}
   m_PrefabInstance: {fileID: 9058035415096165909}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1227200946
@@ -836,16 +846,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: whip
+      value: 
+      objectReference: {fileID: 1651805248}
+    - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: knife
+      value: 
+      objectReference: {fileID: 781766657}
+    - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 8038337268233163641, guid: 8c24da42b03f57542b00fbdfb4741158, type: 3}
+    - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
       propertyPath: expbar
       value: 
       objectReference: {fileID: 314615749}
     - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: garlick
+      value: 
+      objectReference: {fileID: 1651805248}
+    - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
       propertyPath: levellayout
       value: 
       objectReference: {fileID: 358879852}
+    - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: buttonupgrade1
+      value: 
+      objectReference: {fileID: 785884973}
+    - target: {fileID: 2338189172647693972, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: buttonupgrade2
+      value: 
+      objectReference: {fileID: 989277380}
     - target: {fileID: 2800988241803471514, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800988241803471515, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2800988241803471526, guid: b6ba3156a95437c468906b3cc540e7b7, type: 3}
       propertyPath: m_RootOrder
@@ -1089,6 +1127,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.0000047683716
       objectReference: {fileID: 0}
+    - target: {fileID: 1265840620762025173, guid: 72d0150104d0ff44594e210e21308911, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2350977028997155710, guid: 72d0150104d0ff44594e210e21308911, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1130,9 +1172,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 781766657}
     - target: {fileID: 7406327797968809509, guid: 72d0150104d0ff44594e210e21308911, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 203285788}
+    - target: {fileID: 7406327797968809509, guid: 72d0150104d0ff44594e210e21308911, type: 3}
       propertyPath: garlick
       value: 
       objectReference: {fileID: 1651805248}
+    - target: {fileID: 7406327797968809509, guid: 72d0150104d0ff44594e210e21308911, type: 3}
+      propertyPath: buttonupgrade1
+      value: 
+      objectReference: {fileID: 785884973}
+    - target: {fileID: 7406327797968809509, guid: 72d0150104d0ff44594e210e21308911, type: 3}
+      propertyPath: buttonupgrade2
+      value: 
+      objectReference: {fileID: 989277380}
     - target: {fileID: 9069536866440304263, guid: 72d0150104d0ff44594e210e21308911, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 7.269806

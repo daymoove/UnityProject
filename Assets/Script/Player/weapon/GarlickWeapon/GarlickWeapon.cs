@@ -5,9 +5,9 @@ using UnityEngine;
 public class GarlickWeapon : MonoBehaviour
 {
     public float attackSize = 3f;
-    int damage = 1;
+    public int damage = 1;
     private float timer;
-    private float timetoattack = 2f;
+    [HideInInspector]public float timetoattack = 3f;
     public GameObject circle;
     private void Update()
     {
