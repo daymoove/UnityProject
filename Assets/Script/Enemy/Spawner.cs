@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public Transform[] spawnpoint;
     public GameObject enemy;
-    public float spawnTime = 2f;
+    public float spawnTime = 3f;
     private int randspawn;
 
  

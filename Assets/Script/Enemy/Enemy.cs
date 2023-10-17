@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     public GameObject exp;
     public float hp = 1;
-    int damage = 1;
+    public int damage = 1;
     Player targetplayer;
     
     void Update()

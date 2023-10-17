@@ -8,7 +8,7 @@ public class NewSpawner : MonoBehaviour
     public GameObject enemy;
     public Vector2 spawnarea;
     public float spawntimer;
-    private float timer;
+    [HideInInspector] public float timer;
     public GameObject player;
 
 
