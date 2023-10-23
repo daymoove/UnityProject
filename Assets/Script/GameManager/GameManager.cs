@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private float timer;
     private bool timeron;
     public GameObject Pause;
+    public GameObject WinScreen;
     public TMP_Text Timertxt;
     public NewSpawner spawner;
     public Enemy enemy;
@@ -30,8 +31,9 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("f");
+                WinScreen.SetActive(true);
                 timeron = false;
+                Time.timeScale = 0f;
             }
         }
 

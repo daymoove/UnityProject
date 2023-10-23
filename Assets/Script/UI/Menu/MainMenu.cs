@@ -7,6 +7,12 @@ public class MainMenu : MonoBehaviour
 {
 
     public GameObject optionMenu;
+
+    private void Start()
+    {
+        optionMenu.GetComponent<OptionMenu>().SetVolume(-30);
+    }
+
     public void play_game()
     {
         Time.timeScale = 1f;
