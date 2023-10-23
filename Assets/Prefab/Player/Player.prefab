@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSize: 3
+  damage: 1
+  timetoattack: 3
   circle: {fileID: 0}
 --- !u!1 &1849411660223215648
 GameObject:
@@ -94,6 +96,8 @@ MonoBehaviour:
   timetoattck: 1.5
   trowingknife: {fileID: 0}
   player: {fileID: 0}
+  knifenumber: 0
+  damage: 5
 --- !u!1 &2083646030387225154
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +450,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expbar: {fileID: 0}
+  levellayout: {fileID: 0}
+  buttonupgrade1: {fileID: 0}
+  buttonupgrade2: {fileID: 0}
+  buttonName: []
 --- !u!114 &-7103390530455734813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +469,7 @@ MonoBehaviour:
   maxHp: 1000
   currentHp: 1000
   hpbar: {fileID: 0}
+  LoseScreen: {fileID: 0}
 --- !u!1 &6649323096860827331
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +518,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whipleft: {fileID: 0}
   rightwhip: {fileID: 0}
+  timetoattack: 2
   player: {fileID: 0}
+  whipDamage: 1
 --- !u!1 &7004294019739284436
 GameObject:
   m_ObjectHideFlags: 0
